@@ -258,7 +258,7 @@ h2 {
 .mini {
     font-size:.85rem;
     text-align:center;
-    margin-top:10px;
+    margin-top:22px;
     opacity:.85
 }
 
@@ -269,7 +269,7 @@ h2 {
 }
 
 .mini a:hover {opacity:.7}
-.actions + .mini {margin-top:10px}
+.actions + .mini {margin-top:22px}
 #landing .mini{text-align:left}
 
 @media(min-width:600px){main{padding-top:48px}.actions{grid-template-columns:1fr 1fr}#again{grid-column:1/-1}}
