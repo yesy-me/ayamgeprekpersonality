@@ -8,6 +8,7 @@
     --body:"Nunito","Segoe UI",sans-serif
 }
 *{box-sizing:border-box;margin:0}
+[hidden]{display:none!important}
 
 html,body{min-height:100%}
 
@@ -131,6 +132,13 @@ h2 {
     margin-bottom:8px
 }
 
+#result .count {
+    font-size:clamp(2.4rem,11vw,3.6rem);
+    text-align:center;
+    margin-bottom:16px;
+    text-shadow:3px 3px 0 var(--highlight)
+}
+
 .track {
     height:14px;
     border:3px solid var(--primary);
@@ -246,6 +254,23 @@ h2 {
     opacity:1;
     transform:translate(-50%,0)
 }
+
+.mini {
+    font-size:.85rem;
+    text-align:center;
+    margin-top:10px;
+    opacity:.85
+}
+
+.mini a { 
+    color:inherit;
+    text-decoration:underline;
+    text-underline-offset:3px
+}
+
+.mini a:hover {opacity:.7}
+.actions + .mini {margin-top:10px}
+#landing .mini{text-align:left}
 
 @media(min-width:600px){main{padding-top:48px}.actions{grid-template-columns:1fr 1fr}#again{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
