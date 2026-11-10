@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Ayam Geprek Are You?</title>
+  <meta name="description" content="7 questions. 5 personalities. 1 real you. Find out which ayam geprek you are.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="band" aria-hidden="true"></div>
+  <main>
+    <section id="landing" class="view active">
+      <h1>What Ayam Geprek Are You?</h1>
+      <p class="sub">7 questions. 5 personalities. 1 real you.</p>
+      <p class="intro">Sambal bawang, mozzarella, matah, ijo or bakar? Answer seven quick questions and find out which ayam geprek matches your personality.</p>
+      <button id="startBtn" class="btn">Start quiz</button>
+    </section>
+
+    <section id="quiz" class="view">
+      <p id="count" class="count"></p>
+      <div class="track"><div id="bar"></div></div>
+      <div id="qCard" class="card">
+        <h2 id="qText"></h2>
+        <div id="options" class="options"></div>
+      </div>
+      <div class="nav">
+        <button id="back" class="btn ghost">Back</button>
+        <button id="next" class="btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section id="tie" class="view">
+      <p class="count">Wait… we have a tie!</p>
+      <div class="card">
+        <h2 id="tText"></h2>
+        <div id="tOptions" class="options"></div>
+      </div>
+    </section>
+
+    <section id="result" class="view">
+      <p class="count">You are…</p>
+      <figure class="poster">
+        <img id="posterImg" alt="" hidden>
+        <div id="posterPh" class="ph" hidden></div>
+      </figure>
+      <div class="actions">
+        <a id="download" class="btn" href="#" download>Download poster</a>
+        <button id="share" class="btn">Share my result</button>
+        <button id="again" class="btn ghost">Take the quiz again</button>
+      </div>
+    </section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div class="band" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
